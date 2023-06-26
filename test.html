@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
 <head>
-<title>Page Title</title>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 </head>
-<body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-<iframe src="https://player.sohatv.vn/embed/102093?vid=bizflyvod-toantestvod.vod.bfcplatform.vn/597703138410721280/2023/6/26/thuongvo-16877675722161501829974.mp4&ads=true&autoplay=false&_info=469da77ffbe31cfa85d27be31f8e3b7e&poster=https://bizflyvod-toantestvod.vod.bfcplatform.vn/597703138410721280/2023/6/26/.thuongvo-16877675722161501829974.mp4.jpg&location=" width="100%" height="100%" frameBorder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<body id='body'>
+    <script>
 
+    /**
+     * Script load player.
+     * + callback trả về player khi init thành công
+     https://adminplayer.sohatv.vn/docs/guide/secure-sdk
+    */
+    (function(d, s) {
+        var js, pjs = d.getElementsByTagName(s)[0];
+        js = d.createElement(s);
+        js.src = 'https://adminplayer.sohatv.vn/resource/init-script/playerInitSdk.js#secure=L3NlY3VyZS92ZXJpZnkvMmZ0cWJoZzltNnpvcGlnd2lxMDNod2ZwMzA0Mno5Z2kvMTAyMDkzL2V5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp5WldZaU9pSWlMQ0poY0hCclpYa2lPaUl5Wm5SeFltaG5PVzAyZW05d2FXZDNhWEV3TTJoM1puQXpNRFF5ZWpsbmFTSXNJbkJzWVhsbGNpSTZNVEF5TURrekxDSnBaMjV2Y21WRmVIQnBjbUYwYVc5dUlqcDBjblZsTENKcFlYUWlPakUyT0RjM05qYzFNekVzSW1WNGNDSTZNVFk0TnpjMk56WTFNWDAuTGFZSHBqcHdZOUtBaTJBUXJOTjZ3a0lQakFzd0ZpVGh2LWEwVlhQZU4ySQ==';
+        pjs.parentNode.insertBefore(js, pjs);
+    }(document, 'script'));
+    </script>
+
+    <!-- 
+        Các vị trí gen player với:
+        + width: Chiều rộng
+        + height: Chiều dài
+        + class: Bắt buộc chứa tên của player
+        + data-[attribute]: Các option như file, vid, autoplay, poster, mute, volume, replay, ads, midroll, nopre,...
+    -->
+    <video width='500px' height="300px" class="VFCPlayer" data-vid="bizflyvod-toantestvod.vod.bfcplatform.vn/597703138410721280/2023/6/26/thuongvo-16877675722161501829974.mp4">
+    </video>
+
+    <br/>
+
+    <video width='700px' height="400px" class="VFCPlayer" data-vid="bizflyvod-toantestvod.vod.bfcplatform.vn/597703138410721280/2023/6/26/thuongvo-16877675722161501829974.mp4">
+    </video>
 </body>
+
 </html>
