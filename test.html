@@ -36,6 +36,42 @@
 
     <video width='700px' height="400px" class="BIZFLYVODtoantestvod" data-vid="bizflyvod-toantestvod.vod.bfcplatform.vn/597703138410721280/2023/6/26/thuongvo-16877675722161501829974.mp4">
     </video>
+
+    <h5>script </h5>
+
+    <video id="video-tag-id" playsinline webkit-playsinline height="300" width="545"></video>
+    <script src="//adminplayer.sohatv.vn/resource/init-script/playerInitScript.js"></script>
+    <script>
+        var secureToken = "L3NlY3VyZS92ZXJpZnkvMmZ0cWJoZzltNnpvcGlnd2lxMDNod2ZwMzA0Mno5Z2kvMTAyMDkzL2V5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp5WldZaU9pSWlMQ0poY0hCclpYa2lPaUl5Wm5SeFltaG5PVzAyZW05d2FXZDNhWEV3TTJoM1puQXpNRFF5ZWpsbmFTSXNJbkJzWVhsbGNpSTZNVEF5TURrekxDSnBaMjV2Y21WRmVIQnBjbUYwYVc5dUlqcDBjblZsTENKcFlYUWlPakUyT0RjM05qYzFNekVzSW1WNGNDSTZNVFk0TnpjMk56WTFNWDAuTGFZSHBqcHdZOUtBaTJBUXJOTjZ3a0lQakFzd0ZpVGh2LWEwVlhQZU4ySQ==";
+        var params = {
+            vid: "bizflyvod-toantestvod.vod.bfcplatform.vn/597703138410721280/2023/6/26/thuongvo-16877675722161501829974.mp4", // là vid của video (required)
+            autoplay: true|false, // Option tự động play khi được init, (option)
+    };
+
+    /* Và một số query data trên iframe url được đưa vào trong params ví dụ
+
+        location:
+        _info:40c06b3bf72e4ea0b8cebadba192635f
+        vtype:3
+        playType:1
+        _admParamTvc:0;1;0;0
+        _listsuggest:http://vtvapi1.cnnd.vn/aj-z1488/suggest-videos.htm
+        postroll:true
+        autoplay:true
+        nonVol:true
+        volume:0.6
+        boxVideoID:ifVideo-40c06b3bf72e4ea0b8cebadba192635f
+        nopre:true
+        midroll:0.8;20s
+    */
+    playerInitScript("video-tag-id", {
+        params: params,
+        secure: secureToken,
+    }, function(){
+        var player = this; // callback trả về player khi init thành công
+    });
+    </script>
+  
 </body>
 
 </html>
