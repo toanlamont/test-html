@@ -1,0 +1,26 @@
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+</head>
+
+<body id='body'>
+    <video id="video-tag-id" playsinline webkit-playsinline height="300" width="545"></video>
+<script src="https://adminplayer.sohatv.vn/resource/init-script/playerInitScript.js"></script>
+<script>
+    var secureToken = "L3NlY3VyZS92ZXJpZnkvMmZ0cWJoZzltNnpvcGlnd2lxMDNod2ZwMzA0Mno5Z2kvMTAyNDY1L2V5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp5WldZaU9pSWlMQ0poY0hCclpYa2lPaUl5Wm5SeFltaG5PVzAyZW05d2FXZDNhWEV3TTJoM1puQXpNRFF5ZWpsbmFTSXNJbkJzWVhsbGNpSTZNVEF5TkRZMUxDSnBaMjV2Y21WRmVIQnBjbUYwYVc5dUlqcDBjblZsTENKcFlYUWlPakUyT0RnME5ERTBNVFlzSW1WNGNDSTZNVFk0T0RRME1UVXpObjAuLWRjenFyZl9MTDdhbm9sS0Rwb3ZFZk55VFdETjRxUmNYNG83N1JiSEVRQQ==";
+    var params = {
+        file: "https://d-0bd485d464504d67af7b4f5b333fb73e.vod-staging.bfcplatform.vn/.vod-d/547694304133079040_2023_2_13_cqM_HFH3ueg-1676273085153901480419.mp4", // là link của video (required)
+        volume: 0.6,
+        autoplay: true, 
+        muted: false,
+        mute: false
+};
+playerInitScript("video-tag-id", {
+    params: params,
+    secure: secureToken,
+}, function(){
+    var player = this; 
+});
+</script>
+</body>
