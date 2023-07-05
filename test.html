@@ -9,6 +9,40 @@
 <body id='body'>
     <h1>test staging</h1>
     <iframe src="https://devadminplayer.sohatv.vn/embed/102528?vid=bizflyvod-staging-toannd01alo.vod-staging.bfcplatform.vn/600985866543521792/2023/7/5/quangle-1688550218613204231659.mp4&ads=true&autoplay=false&_info=600985996130738176&poster=https://bizflyvod-staging-toannd01alo.vod-staging.bfcplatform.vn/600985866543521792/2023/7/5/.quangle-1688550218613204231659.mp4.jpg&location=" width="100%" height="100%" frameBorder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+    <h1>sdk</h1>
+    <video id="video-tag-id" playsinline webkit-playsinline height="300" width="545"></video>
+    <script src="//adminplayer.sohatv.vn/resource/init-script/playerInitScript.js"></script>
+    <script>
+        var secureToken = "L3NlY3VyZS92ZXJpZnkvMmZ0cWJoZzltNnpvcGlnd2lxMDNod2ZwMzA0Mno5Z2kvMTAyNTI4L2V5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp5WldZaU9pSWlMQ0poY0hCclpYa2lPaUl5Wm5SeFltaG5PVzAyZW05d2FXZDNhWEV3TTJoM1puQXpNRFF5ZWpsbmFTSXNJbkJzWVhsbGNpSTZNVEF5TlRJNExDSnBaMjV2Y21WRmVIQnBjbUYwYVc5dUlqcDBjblZsTENKcFlYUWlPakUyT0RnMU5UQXhPVFFzSW1WNGNDSTZNVFk0T0RVMU1ETXhOSDAuc2FNX1R3alM5eWtsX0phRHFSYXBEUXJWZWtPTmxkVHlCcTFiQXNHcm4zRQ==";
+        var params = {
+            vid: "bizflyvod-staging-toannd01alo.vod-staging.bfcplatform.vn/600985866543521792/2023/7/5/quangle-1688550218613204231659.mp4", // là vid của video (required)
+            autoplay: true|false, // Option tự động play khi được init, (option)
+    };
+
+    /* Và một số query data trên iframe url được đưa vào trong params ví dụ
+
+        location:
+        _info:40c06b3bf72e4ea0b8cebadba192635f
+        vtype:3
+        playType:1
+        _admParamTvc:0;1;0;0
+        _listsuggest:http://vtvapi1.cnnd.vn/aj-z1488/suggest-videos.htm
+        postroll:true
+        autoplay:true
+        nonVol:true
+        volume:0.6
+        boxVideoID:ifVideo-40c06b3bf72e4ea0b8cebadba192635f
+        nopre:true
+        midroll:0.8;20s
+    */
+    playerInitScript("video-tag-id", {
+        params: params,
+        secure: secureToken,
+    }, function(){
+        var player = this; // callback trả về player khi init thành công
+    });
+    </script>
   
 </body>
 
