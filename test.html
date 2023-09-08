@@ -5,45 +5,59 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 </head>
+    <!doctype html>
 
-<body id='body'>
-    <h1>test staging</h1>
-    <iframe src="https://devadminplayer.sohatv.vn/embed/102528?vid=bizflyvod-staging-toannd01alo.vod-staging.bfcplatform.vn/600985866543521792/2023/7/5/quangle-1688550218613204231659.mp4&ads=true&autoplay=false&_info=600985996130738176&poster=https://bizflyvod-staging-toannd01alo.vod-staging.bfcplatform.vn/600985866543521792/2023/7/5/.quangle-1688550218613204231659.mp4.jpg&location=" width="100%" height="100%" frameBorder="0" scrolling="no" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+<html>
+    <head>
+        <meta charset="utf-8">
 
-    <h1>sdk</h1>
-    <video id="video-tag-id" playsinline webkit-playsinline height="300" width="545"></video>
-    <script src="//adminplayer.sohatv.vn/resource/init-script/playerInitScript.js"></script>
-    <script>
-        var secureToken = "L3NlY3VyZS92ZXJpZnkvMmZ0cWJoZzltNnpvcGlnd2lxMDNod2ZwMzA0Mno5Z2kvMTAyNTI4L2V5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp5WldZaU9pSWlMQ0poY0hCclpYa2lPaUl5Wm5SeFltaG5PVzAyZW05d2FXZDNhWEV3TTJoM1puQXpNRFF5ZWpsbmFTSXNJbkJzWVhsbGNpSTZNVEF5TlRJNExDSnBaMjV2Y21WRmVIQnBjbUYwYVc5dUlqcDBjblZsTENKcFlYUWlPakUyT0RnMU5UQXhPVFFzSW1WNGNDSTZNVFk0T0RVMU1ETXhOSDAuc2FNX1R3alM5eWtsX0phRHFSYXBEUXJWZWtPTmxkVHlCcTFiQXNHcm4zRQ==";
-        var params = {
-            vid: "bizflyvod-staging-toannd01alo.vod-staging.bfcplatform.vn/600985866543521792/2023/7/5/quangle-1688550218613204231659.mp4", // là vid của video (required)
-            autoplay: true|false, // Option tự động play khi được init, (option)
-    };
+        <title>Blank template</title>
 
-    /* Và một số query data trên iframe url được đưa vào trong params ví dụ
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="styles.css">
 
-        location:
-        _info:40c06b3bf72e4ea0b8cebadba192635f
-        vtype:3
-        playType:1
-        _admParamTvc:0;1;0;0
-        _listsuggest:http://vtvapi1.cnnd.vn/aj-z1488/suggest-videos.htm
-        postroll:true
-        autoplay:true
-        nonVol:true
-        volume:0.6
-        boxVideoID:ifVideo-40c06b3bf72e4ea0b8cebadba192635f
-        nopre:true
-        midroll:0.8;20s
-    */
-    playerInitScript("video-tag-id", {
-        params: params,
-        secure: secureToken,
-    }, function(){
-        var player = this; // callback trả về player khi init thành công
-    });
-    </script>
+    </head>
+
+    <body id='body'>
+        <h1>test</h1>
   
-</body>
+      <video id="video-tag-id" playsinline webkit-playsinline height="300" width="545"></video>
+  <script src="https://devadminplayer.sohatv.vn/resource/init-script/playerInitScript.js"></script>
+  <script>
+      var secureToken = "L3NlY3VyZS92ZXJpZnkvMmZ0cWJoZzltNnpvcGlnd2lxMDNod2ZwMzA0Mno5Z2kvMTAyNjk5L2V5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUp5WldZaU9pSWlMQ0poY0hCclpYa2lPaUl5Wm5SeFltaG5PVzAyZW05d2FXZDNhWEV3TTJoM1puQXpNRFF5ZWpsbmFTSXNJbkJzWVhsbGNpSTZNVEF5TmprNUxDSnBaMjV2Y21WRmVIQnBjbUYwYVc5dUlqcDBjblZsTENKcFlYUWlPakUyT1RReE5UWTVNakFzSW1WNGNDSTZNVFk1TkRFMU56QTBNSDAudzZaLUQwV3dKNlVERmNLYUZCYkNBSDAwQ0dQcVNpLUxRMzZZc0RRZ3V2MA=="; // Được lấy từ trên trang quản lý
+      var params = {
+          vid: "d-4a56d1bd17404cd29b7234ccd192b3a2.vod-staging.bfcplatform.vn/.vod-d/471584752817336320/2023/8/19/cau-kinh-c-16924509566221839260699.mp4", // là link của video (required)
+          volume: 0.6,
+          autoplay: true, // Option tự động play khi được init, (option)
+          muted: false,
+          mute: false
+  };
 
+  /* Và một số query data trên iframe url được đưa vào trong params ví dụ
+
+      location:
+      _info:40c06b3bf72e4ea0b8cebadba192635f
+      vtype:3
+      playType:1
+      _admParamTvc:0;1;0;0
+      _listsuggest:http://vtvapi1.cnnd.vn/aj-z1488/suggest-videos.htm
+      postroll:true
+      autoplay:true
+      nonVol:true
+      volume:0.6
+      boxVideoID:ifVideo-40c06b3bf72e4ea0b8cebadba192635f
+      nopre:true
+      midroll:0.8;20s
+  */
+  playerInitScript("video-tag-id", {
+      params: params,
+      secure: secureToken,
+  }, function(){
+      var player = this; // callback trả về player khi init thành công
+  });
+  </script>
+
+  </body>
+
+</html>
 </html>
